@@ -17,7 +17,6 @@
         P1.JumpOps()
         g.UpdatePlayerGUI(P1)
 
-        Me.Text = P1.Properties.PXpos
 
         If GetAsyncKeyState(27) Then
             '--ESC--
