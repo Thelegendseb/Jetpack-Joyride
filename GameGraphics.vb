@@ -3,6 +3,8 @@
     Public PlayerGUI As New PictureBox
     Public CurrentsGUI As New PictureBox
 
+    'test update
+
     Sub New(P As Player)
         Me.PlayerGUI.BackColor = Color.Red 'will be image
         Me.PlayerGUI.Size = P.Properties.PSize
