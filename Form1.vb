@@ -13,10 +13,9 @@
     Private Declare Function GetAsyncKeyState Lib "user32" (ByVal vKey As Integer) As Short
     Private Sub GameRule_Tick(sender As System.Object, e As System.EventArgs) Handles GameRule.Tick
 
-        P1.Properties.PXpos += 0.1
+        P1.Properties.PXpos += P1.Properties.PXV
         P1.JumpOps()
         g.UpdatePlayerGUI(P1)
-
 
         If GetAsyncKeyState(27) Then
             '--ESC--

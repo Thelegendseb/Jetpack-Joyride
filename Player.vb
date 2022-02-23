@@ -2,7 +2,7 @@
 
     Public Properties As New PlayerProperties
 
-    Public FOV(2) As GameTile
+    Public FOV As List(Of GameTile)
 
     Sub New()
         Properties.PYpos = 326 'grounded val;
