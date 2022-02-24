@@ -53,9 +53,17 @@
                 Else
                     Point2 = New Point(GetPointStartX, GetPointStartY - LineLength)
                 End If
-            Case "DP"
-                'check here if possible if not possbile relocate
-            Case "DN"
+            Case "DP", "DN"
+                Dim Ydiff As Integer = Math.Sin(45) * LineLength
+                Dim Xdiff As Integer = Math.Cos(45) * LineLength
+                If Form1.Height / 2 < GetPointStartY Then 'dp 
+
+
+                Else 'dn
+
+
+                End If
+
 
         End Select
 
